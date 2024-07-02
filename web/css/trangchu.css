@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+html,body {
+    width: 100%;
+    height: 100%;
+}
+.wraper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.slide {
+    width: 100%;
+    height: 100%;
+
+}
+ 
+.slide_1 {
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    z-index: 1;
+}
+.slide_3 {
+ 
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    z-index: 3;
+    opacity: 0;
+}
+
+
+
+.nut {
+    position: absolute;
+    left: 60%;
+    transform: translateX(-50%);
+    z-index: 999;
+	margin-top:-2%;
+	
+}
+.nut ul li {
+    width: 10px;
+    height: 10px;
+    border:2px solid #FFF;
+    display: inline-block;
+    border-radius: 100%;
+    cursor: pointer;
+}
+ 
+.nut ul li:hover {
+    background-color: white;
+}
+.ra{
+    transition: 1.5s;
+    opacity: 1;
+}
+aside#right,section{
+	display:table-cell;
+	vertical-align:top;
+}
+section{
+	width:1127px;
+	height:auto;
+	padding-top:0.1%;
+	padding-left:0%;
+	float:left;
+	background-color:#FFF;
+	text-align:center;
+}
+section img{
+	width:1349px;
+	height:390px;
+	position:relative;
+}
+
+
+div#danhsachxe{
+	width:100%;
+	height:auto;
+}
+div#danhsachxe >div{
+	text-align:center;
+	width:23%;
+	height:215px;
+	float:left;
+	margin-left:1.6%;
+	margin-top:1.6%;
+	
+}
+div#danhsachxe >div img{
+	width:100%;
+	height:84%;
+	border-radius:13px;
+	position:static;
+	
+}
+div#danhsachxe >div a{
+	font-family:"Times New Roman", Times, serif;
+	font-size:15px;
+	font-weight:bolder;
+	color:black;
+	text-decoration:none;
+}
+div#danhsachxe >div a:hover{
+	color:#dd3818;
+	text-shadow:1px 1px 1px #f4a565;
+}
+div#danhsachxe >div img:hover{
+	transform:scale(1.1);
+	transition:all.6s ease;
+	margin-bottom:10px;
+}
+
+aside#right{
+	padding-top:390px;
+	width:200px;
+	height:auto;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:#3f3f3f ;
+}
+aside#right>div{
+	margin-top:10px;
+	border:1px #F90 solid;
+	width:200px;
+	height:auto;
+
+}
+aside#right>div>p{
+	/*background-color:#dd3818;*/
+	background: linear-gradient(120deg, #B22222, #1e1e1e,#B22222);
+	color:white;
+	font-family:"Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	height:30px;
+	padding-top:10px;
+}
+aside#right>div>marquee{
+	height:260px;
+	width:200px;
+	text-align:center;
+}
+aside#right>div>marquee a{
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#F90;
+}
+aside#right>div>marquee div{
+	margin-top:5px;
+	margin-bottom:10px;
+}
+aside#right>div>marquee div#viencham{
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:2px dotted #F90;
+	border-top:2px dotted #F90;
+}
+.maugia{
+	color:white;
+	font-family:"Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:bold;
+}
+aside#right>div>marquee img{
+	width:150px;
+	height:100px;
+}
+/* trangchu.css */
+
+/* Thiết lập cho body */
+body {
+    font-family: Arial, sans-serif; /* Font chữ mặc định */
+    margin: 0; /* Xóa margin mặc định của body */
+    padding: 0; /* Xóa padding mặc định của body */
+    background-color: #f0f0f0; /* Màu nền body */
+}
+
+/* Thiết lập cho phần trái */
+.trai {
+    width: 20%; /* Độ rộng của phần trái */
+    float: left; /* Đẩy về bên trái */
+    background-color: #fff; /* Màu nền */
+    height: 1000px; /* Chiều cao */
+}
+
+/* Thiết lập cho phần menu */
+#menu {
+    background-color: #333; /* Màu nền */
+    padding: 10px 0; /* Khoảng cách lề */
+    text-align: center; /* Canh giữa nội dung trong menu */
+}
+
+#menu ul {
+    list-style-type: none; /* Xóa dấu đầu dòng */
+    padding: 0;
+}
+
+#menu ul li {
+    position: relative;
+    display: inline-block; /* Hiển thị trên cùng một dòng */
+    margin-right: 20px; /* Khoảng cách giữa các menu item */
+}
+
+#menu ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân cho liên kết */
+}
+
+#menu ul li:hover > ul {
+    display: block; /* Hiển thị submenu khi rê chuột vào */
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333; /* Màu nền submenu */
+    border-radius: 0 0 4px 4px; /* Góc bo tròn phía dưới */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Đổ bóng */
+}
+
+#menu ul ul li {
+    width: 200px; /* Độ rộng submenu */
+    float: none; /* Bỏ float */
+}
+
+#menu ul ul a {
+    padding: 10px;
+    color: #fff; /* Màu chữ submenu */
+}
+
+#menu ul ul a:hover {
+    background-color: #555; /* Màu khi hover vào submenu */
+}
+/* Thiết lập cho header */
+header {
+    background-color: #333; /* Màu nền */
+    padding: 10px 0; /* Khoảng cách lề */
+    text-align: center; /* Canh giữa nội dung trong header */
+    position: relative; /* Đặt vị trí tương đối */
+}
+
+header img {
+    width: 1300px; /* Độ rộng của logo */
+    height: 200px; /* Chiều cao tự điều chỉnh */
+}
+
+/* Nếu bạn muốn logo nằm giữa header */
+header img {
+    display: block; /* Hiển thị block */
+    margin: 0 auto; /* Canh giữa theo chiều ngang */
+}
